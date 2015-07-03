@@ -13,12 +13,16 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+Plugin 'spope/vim-fugitive'
 Bundle 'bling/vim-airline'
+Bundle "http://github.com/sjl/gundo.vim.git"
+Plugin 'Lokaltog/vim-easymotion'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+nnoremap <F5> :GundoToggle<CR>
 
 set hlsearch
 
