@@ -73,7 +73,6 @@ set title
 set visualbell
 set noerrorbells
 
-set mouse=a
 set clipboard=unnamedplus
 
 set wildmode=longest,list
