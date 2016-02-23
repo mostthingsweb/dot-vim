@@ -4,10 +4,10 @@ function ask_rm() {
     TARGET=$1
 
     [ -d $TARGET ] && {
-        rm -fri $TARGET
+        rm -frI $TARGET
     } || {
         [ -f $TARGET ] && {
-            rm -i $TARGET
+            rm -fi $TARGET
         }
     }
 
