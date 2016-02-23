@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+TTY=`tty`
+VIMENV=`vim -T dumb --noplugin +'silent !echo $VIM' +qall < $TTY 2>/dev/null
+echo $VIMENV
+
+command -v git >/dev/null || {
+    echo "git is not installed; exiting"
+    exit 1
+}
+
 function ask_rm() {
     TARGET=$1
 
@@ -21,7 +30,7 @@ function ask_rm() {
     }
 }
 
-ask_rm ~/.vimrm
+ask_rm ~/.vimrc
 ask_rm ~/.vim
 
 git clone https://bitbucket.org/MostThingsWeb/dot-vim.git ~/.vim
