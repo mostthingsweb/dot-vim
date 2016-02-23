@@ -17,8 +17,8 @@ function ask_rm() {
     }
 }
 
-ask_rm .vimrm
-ask_rm .vim
+ask_rm ~/.vimrm
+ask_rm ~/.vim
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://bitbucket.org/MostThingsWeb/dot-vim.git ~/.vim
