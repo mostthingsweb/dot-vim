@@ -12,6 +12,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Bundle 'sjl/gundo.vim'
 Plugin 'easymotion/vim-easymotion'
+Bundle "motus/pig.vim"
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
