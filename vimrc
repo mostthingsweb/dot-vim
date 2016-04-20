@@ -12,11 +12,16 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Bundle 'sjl/gundo.vim'
 Plugin 'easymotion/vim-easymotion'
+
+" Syntax for Apache Pig
 Bundle "motus/pig.vim"
+" Syntax for Scala
+Plugin 'derekwyatt/vim-scala'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 
 nnoremap <F5> :GundoToggle<CR>
 
