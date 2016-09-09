@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 TTY=`tty`
-VIMENV=`vim -T dumb --noplugin +'silent !echo $VIM' +qall < $TTY 2>/dev/null
+VIMENV=`vim -T dumb --noplugin +'silent !echo $VIM' +qall < $TTY 2>/dev/null`
 echo $VIMENV
 
 command -v git >/dev/null || {
