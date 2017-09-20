@@ -24,7 +24,6 @@ Plugin 'derekwyatt/vim-scala'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
 nnoremap <F5> :GundoToggle<CR>
 
 let mapleader=","
@@ -75,7 +74,13 @@ function! ShowFuncName()
 endfunction
 map F :call ShowFuncName() <CR>
 
-set smartindent
+set cindent
+
+" http://vimdoc.sourceforge.net/htmldoc/indent.html#cinoptions-values
+" :0   =>  align case with switch statement
+" g0   =>  align access modifiers with 'class'
+set cinoptions =:0,g0
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
