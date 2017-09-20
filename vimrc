@@ -12,6 +12,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Bundle 'sjl/gundo.vim'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'chr4/nginx.vim'
 
 " Syntax for Apache Pig
 Bundle "motus/pig.vim"
