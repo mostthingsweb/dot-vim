@@ -14,6 +14,7 @@ Bundle 'sjl/gundo.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'chr4/nginx.vim'
 Plugin 'vim-scripts/Symfony'
+Plugin 'git://git.yoctoproject.org/poky',{'rtp': 'bitbake/contrib/vim/'}
 
 " Syntax for Apache Pig
 Bundle "motus/pig.vim"
