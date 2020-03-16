@@ -16,6 +16,7 @@ Plugin 'chr4/nginx.vim'
 Plugin 'vim-scripts/Symfony'
 Plugin 'git://git.yoctoproject.org/poky',{'rtp': 'bitbake/contrib/vim/'}
 Plugin 'rust-lang/rust.vim'
+Plugin 'udalov/kotlin-vim'
 
 " Syntax for Apache Pig
 Bundle "motus/pig.vim"
@@ -81,7 +82,8 @@ set cindent
 " http://vimdoc.sourceforge.net/htmldoc/indent.html#cinoptions-values
 " :0   =>  align case with switch statement
 " g0   =>  align access modifiers with 'class'
-set cinoptions =:0,g0
+" l1   =>  align body of case with case statement itself, not brackets (if any)
+set cinoptions =:0,g0,l1,(s,m1,Ws,)40,t0
 
 set tabstop=4
 set shiftwidth=4
