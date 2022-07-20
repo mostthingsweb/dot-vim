@@ -17,6 +17,7 @@ Plugin 'vim-scripts/Symfony'
 Plugin 'git://git.yoctoproject.org/poky',{'rtp': 'bitbake/contrib/vim/'}
 Plugin 'rust-lang/rust.vim'
 Plugin 'udalov/kotlin-vim'
+Plugin 'jyelloz/vim-dts-indent'
 
 " Syntax for Apache Pig
 Bundle "motus/pig.vim"
