@@ -106,5 +106,5 @@ set clipboard=unnamedplus
 
 set wildmode=longest,list
 
-# Turn off stupid screen flash effect
+" Turn off stupid screen flash effect
 set belloff=all
